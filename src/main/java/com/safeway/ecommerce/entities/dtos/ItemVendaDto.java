@@ -1,10 +1,10 @@
 package com.safeway.ecommerce.entities.dtos;
 
+import com.safeway.ecommerce.entities.ItemVenda;
 import com.safeway.ecommerce.entities.Produto;
 
 public class ItemVendaDto {
     private Integer id;
-
     private Produto produto;
     private Integer quantidade;
 
@@ -15,6 +15,12 @@ public class ItemVendaDto {
         this.id = id;
         this.produto = produto;
         this.quantidade = quantidade;
+    }
+
+    public ItemVendaDto(ItemVenda itemVenda) {
+        this.id = itemVenda.getId();
+        this.produto = itemVenda.getProduto();
+        this.quantidade = itemVenda.getQuantidade();
     }
 
     public Integer getId() {

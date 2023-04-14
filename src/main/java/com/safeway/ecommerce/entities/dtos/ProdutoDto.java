@@ -7,7 +7,7 @@ public class ProdutoDto {
     private Integer id;
     private String nome;
     private Double preco;
-    private Integer quantidade;
+    private Integer quantidadeEstoque;
 
     public ProdutoDto() {
     }
@@ -16,7 +16,7 @@ public class ProdutoDto {
         this.id = produto.getId();
         this.nome = produto.getNome();
         this.preco = produto.getPreco();
-        this.quantidade = produto.getQuantidade();
+        this.quantidadeEstoque = produto.getQuantidadeEstoque();
     }
 
     public Integer getId() {
@@ -43,11 +43,11 @@ public class ProdutoDto {
         this.preco = preco;
     }
 
-    public Integer getQuantidade() {
-        return quantidade;
+    public Integer getQuantidadeEstoque() {
+        return quantidadeEstoque;
     }
 
-    public void setQuantidade(Integer quantidade) {
-        this.quantidade = quantidade;
+    public void setQuantidadeEstoque(Integer quantidadeEstoque) {
+        this.quantidadeEstoque = quantidadeEstoque;
     }
 }
